@@ -11,6 +11,14 @@
 		163833BE2C4EEA4600FA2C7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163833BD2C4EEA4600FA2C7F /* ContentView.swift */; };
 		163833C02C4EEA4800FA2C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163833BF2C4EEA4800FA2C7F /* Assets.xcassets */; };
 		163833C42C4EEA4800FA2C7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163833C32C4EEA4800FA2C7F /* Preview Assets.xcassets */; };
+		163833CF2C4EEAC800FA2C7F /* iOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163833CE2C4EEAC800FA2C7F /* iOSView.swift */; };
+		163833D12C4EEAD900FA2C7F /* macOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163833D02C4EEAD900FA2C7F /* macOSView.swift */; };
+		163833D32C4EEC8F00FA2C7F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163833D22C4EEC8F00FA2C7F /* Post.swift */; };
+		163833D52C4EED9600FA2C7F /* Reaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163833D42C4EED9600FA2C7F /* Reaction.swift */; };
+		163833D82C4EEE7E00FA2C7F /* getData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163833D72C4EEE7E00FA2C7F /* getData.swift */; };
+		163833DA2C4F010000FA2C7F /* SinglePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163833D92C4F010000FA2C7F /* SinglePostView.swift */; };
+		163833DD2C4F063000FA2C7F /* samplePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163833DC2C4F063000FA2C7F /* samplePost.swift */; };
+		163833DF2C4F41CA00FA2C7F /* moreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163833DE2C4F41CA00FA2C7F /* moreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		163833BF2C4EEA4800FA2C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		163833C12C4EEA4800FA2C7F /* Basic_Social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Basic_Social.entitlements; sourceTree = "<group>"; };
 		163833C32C4EEA4800FA2C7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		163833CE2C4EEAC800FA2C7F /* iOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSView.swift; sourceTree = "<group>"; };
+		163833D02C4EEAD900FA2C7F /* macOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOSView.swift; sourceTree = "<group>"; };
+		163833D22C4EEC8F00FA2C7F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		163833D42C4EED9600FA2C7F /* Reaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reaction.swift; sourceTree = "<group>"; };
+		163833D72C4EEE7E00FA2C7F /* getData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getData.swift; sourceTree = "<group>"; };
+		163833D92C4F010000FA2C7F /* SinglePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePostView.swift; sourceTree = "<group>"; };
+		163833DC2C4F063000FA2C7F /* samplePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = samplePost.swift; sourceTree = "<group>"; };
+		163833DE2C4F41CA00FA2C7F /* moreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = moreData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,12 @@
 		163833BA2C4EEA4600FA2C7F /* Basic Social */ = {
 			isa = PBXGroup;
 			children = (
+				163833DB2C4F060800FA2C7F /* sample data */,
+				163833D62C4EEE6800FA2C7F /* functions */,
+				163833CD2C4EEA8900FA2C7F /* structs */,
+				163833CC2C4EEA8000FA2C7F /* shared */,
+				163833CB2C4EEA7700FA2C7F /* macos */,
+				163833CA2C4EEA6E00FA2C7F /* ios */,
 				163833BB2C4EEA4600FA2C7F /* Basic_SocialApp.swift */,
 				163833BD2C4EEA4600FA2C7F /* ContentView.swift */,
 				163833BF2C4EEA4800FA2C7F /* Assets.xcassets */,
@@ -67,6 +89,56 @@
 				163833C32C4EEA4800FA2C7F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		163833CA2C4EEA6E00FA2C7F /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				163833CE2C4EEAC800FA2C7F /* iOSView.swift */,
+				163833D92C4F010000FA2C7F /* SinglePostView.swift */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		163833CB2C4EEA7700FA2C7F /* macos */ = {
+			isa = PBXGroup;
+			children = (
+				163833D02C4EEAD900FA2C7F /* macOSView.swift */,
+			);
+			path = macos;
+			sourceTree = "<group>";
+		};
+		163833CC2C4EEA8000FA2C7F /* shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		163833CD2C4EEA8900FA2C7F /* structs */ = {
+			isa = PBXGroup;
+			children = (
+				163833D22C4EEC8F00FA2C7F /* Post.swift */,
+				163833D42C4EED9600FA2C7F /* Reaction.swift */,
+			);
+			path = structs;
+			sourceTree = "<group>";
+		};
+		163833D62C4EEE6800FA2C7F /* functions */ = {
+			isa = PBXGroup;
+			children = (
+				163833D72C4EEE7E00FA2C7F /* getData.swift */,
+				163833DE2C4F41CA00FA2C7F /* moreData.swift */,
+			);
+			path = functions;
+			sourceTree = "<group>";
+		};
+		163833DB2C4F060800FA2C7F /* sample data */ = {
+			isa = PBXGroup;
+			children = (
+				163833DC2C4F063000FA2C7F /* samplePost.swift */,
+			);
+			path = "sample data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +211,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				163833DF2C4F41CA00FA2C7F /* moreData.swift in Sources */,
+				163833DA2C4F010000FA2C7F /* SinglePostView.swift in Sources */,
+				163833D12C4EEAD900FA2C7F /* macOSView.swift in Sources */,
+				163833DD2C4F063000FA2C7F /* samplePost.swift in Sources */,
 				163833BE2C4EEA4600FA2C7F /* ContentView.swift in Sources */,
 				163833BC2C4EEA4600FA2C7F /* Basic_SocialApp.swift in Sources */,
+				163833CF2C4EEAC800FA2C7F /* iOSView.swift in Sources */,
+				163833D82C4EEE7E00FA2C7F /* getData.swift in Sources */,
+				163833D52C4EED9600FA2C7F /* Reaction.swift in Sources */,
+				163833D32C4EEC8F00FA2C7F /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
